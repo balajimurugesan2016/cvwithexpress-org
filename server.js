@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 const routes = require('./routes');
-var hana = require('@sap/hana-client');
+
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
