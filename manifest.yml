@@ -1,0 +1,7 @@
+applications:
+  - name: cmswthexpress
+    random-route: true
+    path: \
+    buildpack: nodejs_buildpack
+    memory: 256M
+    command: npm run start

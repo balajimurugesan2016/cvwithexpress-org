@@ -1,0 +1,26 @@
+{
+  "name": "cv.with.express",
+  "version": "1.0.0",
+  "description": "CV with express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "",
+    "deploy": "npm run build && cf push"
+  },
+  "keywords": [
+    "cv",
+    "js",
+    "resume"
+  ],
+  "author": "Balaji Vengatesh Murugesan",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/hana-client": "^2.5.111",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

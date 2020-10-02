@@ -1,0 +1,27 @@
+## Generated mta.yaml based on template version 0.4.0
+## appName = cv.with.express
+## language=nodejs; multiTenant=false
+## approuter=
+_schema-version: "3.1"
+ID: cmswthexpress
+version: 1.0.0
+description: "CV with express"
+parameters:
+  enable-parallel-deployments: true
+
+##build-parameters:
+## before-all:
+## - builder: custom
+##    commands:
+##    - npm install --production
+
+modules:
+   - name: cmswthexpress
+    type: nodejs
+    path: .
+    build-parameters:
+      builder: npm
+      timeout: 60m
+      buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git
+    parameters:
+      memory: 128M
