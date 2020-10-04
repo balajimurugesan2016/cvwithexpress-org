@@ -20,10 +20,10 @@ app.use(function (req, res, next) {
 app.use('/api', routes());
 
 
-app.use(function (req, res, next) {
+/*app.use(function (req, res, next) {
     res.status(404);
     next();
-});
+}); */
 
 
 app.use(function (err, req, res, next) {

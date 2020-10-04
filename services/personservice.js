@@ -53,6 +53,20 @@ module.exports = class PersonService {
 
     }
 
+    async setLead(id, leadobj) {
+        var sql = `INSERT INTO  D4A4022E7221468688718C057DEA728C.LEADS (id,name,email,subject,message) VALUES(${id},\'${leadobj.surname}\',\'${leadobj.email}\',\'${leadobj.subject}\',\'${leadobj.message}\')`;
+        console.log(sql);
+
+        try {
+
+
+            return await this.hanaservice.fetchrecordsbyquery(sql);
+        } catch (err) {
+            console.log(err);
+        }
+
+    }
+
 
 
 

@@ -5,3 +5,5 @@ applications:
     buildpack: nodejs_buildpack
     memory: 256M
     command: npm run start
+    services:
+      - content-inst
